@@ -12,6 +12,9 @@ let json;
 
 const openSocket = () => {
     const socket = new WebSocket('ws://92.32.155.142:8080');
+    socket.onopen = () => console.log('Connected');
+    socket.onerror = (err) => console.log('Error:', err);
+
     socket.addEventListener('open', () => {
         console.log('Connected to WebSocket server');
     });
