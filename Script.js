@@ -29,6 +29,7 @@ const openSocket = () => {
 
         const data = JSON.parse(text);
         //console.log(data);
+        //change
         shapes = data.map(shapeData => new Shape(
             shapeData.type, 
             shapeData.x, 
