@@ -11,7 +11,7 @@ let shapes = [];
 let json;
 
 const openSocket = () => {
-    const socket = new WebSocket('ws://localhost:8080');
+    const socket = new WebSocket('ws://92.32.155.142:8080');
     socket.addEventListener('open', () => {
         console.log('Connected to WebSocket server');
     });
@@ -39,7 +39,7 @@ const openSocket = () => {
             shapeData.coords || [], // Default to empty array if missing
             shapeData.color
         ));        
-        //console.log(shapes);
+        console.log(shapes);
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         shapes.forEach(shape => {
             shape.draw(ctx);
