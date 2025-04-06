@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Drawing</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    canvas { border: 1px solid #000; display: block; margin-top: 10px; }
+    .controls { margin-bottom: 10px; }
+    label { margin-right: 15px; }
+  </style>
+</head>
+<body>
+
+  <div class="controls">
+    <strong>Shape:</strong>
+    <label><input type="radio" name="shape" value="line" checked> Line</label>
+    <label><input type="radio" name="shape" value="rectangle"> Rectangle</label>
+    <label><input type="radio" name="shape" value="circle"> Circle</label>
+
+    <br><br>
+
+    <label for="colorPicker"><strong>Color:</strong></label>
+    <input type="color" id="colorPicker" value="#000000">
+  </div>
+
+  <canvas id="drawCanvas" width="500" height="400"></canvas>
+
+  <script src="Script.js"></script>
+</body>
+</html>
