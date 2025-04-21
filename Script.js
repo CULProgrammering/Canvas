@@ -11,7 +11,7 @@ let shapes = [];
 let json;
 
 const openSocket = () => {
-    const socket = new WebSocket('ws://172.232.145.231:8080');
+    const socket = new WebSocket('ws://193.181.23.229:8080');
     socket.onopen = () => console.log('Connected');
     socket.onerror = (err) => console.log('Error:', err);
 
